@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { 
-  Zap, 
   Phone, 
   Mail, 
   MapPin, 
@@ -51,9 +50,13 @@ const Footer = () => {
             className="space-y-6"
           >
             <div className="flex items-center space-x-3">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
-                <Zap className="h-8 w-8 text-white" />
-              </div>
+              <div className="flex-shrink-0">
+              <img 
+                src={"logo.jpg"} // Replace with your logo path
+                alt={"DIAT Logo"}
+                className="h-12 w-12 object-contain rounded-lg"
+              />
+            </div>
               <div>
                 <h3 className="text-xl font-bold">DIAT</h3>
                 <p className="text-sm text-gray-400">Divine Installation & Technology</p>
